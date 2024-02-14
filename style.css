@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.bg-image {
+  position: relative; /* Position the container relative to the viewport */
+}
+
+.bg-image img {
+  width: auto; /* Make the image width fill the container */
+  height: 100vh; /* Maintain the aspect ratio of the image */
+  display: block; /* Ensure proper rendering as a block element */
+}
+
+.logo {
+  position: absolute; /* Position the logo relative to its containing block */
+  top: 150px;
+  left: 0;
+  width: 100%;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background color with 50% opacity */
+}
+
+#odin-logo {
+  width: 50px;
+  height: 70px;
+}
+
+/*main*/
+main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main > .intro{
+  padding-left: 30px;
+  padding-top: 90px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight:bold;
+  background-color: rgb(243, 234, 234);
+}
+
+/* form */
+.form {
+  margin-bottom: 10px;
+  position: relative; /* Add position relative to establish a containing block */
+  height: 180px; /* Set a fixed height */
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  padding-left: 30px;
+
+}
+
+.column {
+  flex: 0 0 calc(50% - 10px);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 12px;
+  text-transform: uppercase;
+  display: block;
+  color:rgb(61, 59, 59) ;
+  font-weight: 700;
+}
+
+input {
+  outline:transparent;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+input:valid{
+  border-color: green;
+}
+
+button {
+  font-size: 18px;
+  position: relative;
+  width: 25%;
+  padding: 10px;
+  font-weight: bold;
+  background-color: #698c5b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Styles for different button states */
+button:hover {
+  background-color: #67855b;
+}
+
+button:active {
+  background-color: #67855b;
+}
+.signup{
+  
+  padding-left: 30px;
+}
+#login > a{
+  color: #698c5b;
+  text-decoration: none;
+}
+
+#password-error {
+  background-color: red;
+  font-size: 10px;
+  visibility: hidden; /* Initially hide the error message */
+  color: red;
+}
